@@ -14,11 +14,13 @@ from django.urls import reverse
         </div>
       </header>
       <div class="course-info" aria-hidden="true">
-        <h2 class="course-name">
-          <span class="course-code">${course.display_number_with_default}</span>
-          <span class="course-title">${course.display_name_with_default}</span>
-          <span class="course-organization">${course.display_org_with_default}</span>
-        </h2>
+        <div class="course-content">
+          <h2 class="course-name">
+            <span class="course-code">${course.display_number_with_default}</span>
+            <span class="course-title">${course.display_name_with_default}</span>
+            <span class="course-organization">${course.display_org_with_default}</span>
+          </h2>
+        </div>
         <!-- UPDATED IN INDIGO: Removed Learn More button, image is now clickable -->
         <%
         if course.start is not None:
