@@ -9,9 +9,9 @@ def assign_theme(domain):
 
 assign_theme('{{ LMS_HOST }}')
 assign_theme('{{ LMS_HOST }}')
-assign_theme('{{ LMS_HOST }}:8000')
+assign_theme('{{ LMS_HOST }}:8010')
 assign_theme('{{ CMS_HOST }}')
-assign_theme('{{ CMS_HOST }}:8001')
+assign_theme('{{ CMS_HOST }}:8011')
 assign_theme('{{ PREVIEW_LMS_HOST }}')
-assign_theme('{{ PREVIEW_LMS_HOST }}:8000')
+assign_theme('{{ PREVIEW_LMS_HOST }}:8010')
 "
