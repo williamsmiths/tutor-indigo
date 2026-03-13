@@ -1,6 +1,21 @@
 // Import hero styles
 @import "hero";
 
+// Import about section styles
+@import "about";
+
+// Import training areas styles
+@import "training_areas";
+
+// Import featured majors styles
+@import "featured_majors";
+
+// Import featured courses styles
+@import "featured_courses";
+
+// Import research section styles
+@import "research";
+
 // Import partner styles
 @import "partner";
 
@@ -13,6 +28,12 @@
 // Import skills development styles
 @import "skills_development";
 
+// Import events styles
+@import "events";
+
+// Import CTA banner styles
+@import "cta_banner";
+
 // Include custom home
 section.home {
   max-width: 1600px;
@@ -20,8 +41,9 @@ section.home {
   padding: 0 15px;
 }
 @media (min-width: 1180px) {
-  .min-w-xl-400 {
-    min-width: 400px !important;
+  .min-w-xl-300 {
+    display: block !important;
+    min-width: 300px !important;
   }
 }
 

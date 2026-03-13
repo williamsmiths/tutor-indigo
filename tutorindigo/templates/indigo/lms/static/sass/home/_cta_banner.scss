@@ -1,0 +1,91 @@
+// CTA Banner Section
+#cta-banner-section {
+  background: linear-gradient(135deg, #04549f 0%, #023f7a 100%);
+  padding: 72px 40px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+
+  // Subtle decorative background circles
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.04);
+    pointer-events: none;
+  }
+
+  &::before {
+    width: 400px;
+    height: 400px;
+    top: -120px;
+    left: -80px;
+  }
+
+  &::after {
+    width: 300px;
+    height: 300px;
+    bottom: -100px;
+    right: -60px;
+  }
+
+  .cta-banner-container {
+    position: relative;
+    z-index: 1;
+    max-width: 720px;
+    margin: 0 auto;
+  }
+
+  .cta-banner-tagline {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.75);
+    margin-bottom: 14px;
+    line-height: 1.5;
+  }
+
+  .cta-banner-title {
+    font-size: 2rem;
+    font-weight: 800;
+    color: #ffffff;
+    line-height: 1.25;
+    margin-bottom: 32px;
+
+    @media (max-width: 768px) {
+      font-size: 1.6rem;
+    }
+
+    @media (max-width: 480px) {
+      font-size: 1.35rem;
+    }
+  }
+
+  .cta-banner-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 13px 40px;
+    background: #ffffff;
+    color: #04549f;
+    border-radius: 30px;
+    font-size: 15px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: all 0.25s ease;
+
+    &:hover {
+      background: #e0efff;
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+    }
+  }
+
+  @media (max-width: 768px) {
+    padding: 56px 24px;
+  }
+
+  @media (max-width: 480px) {
+    padding: 48px 16px;
+    .cta-banner-btn { padding: 12px 32px; font-size: 14px; }
+  }
+}
