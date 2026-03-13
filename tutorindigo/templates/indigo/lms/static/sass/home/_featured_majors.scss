@@ -90,7 +90,10 @@
 
       .major-icon {
         background: #04549f;
-        svg { color: white; stroke: white; }
+        svg {
+          color: white;
+          stroke: white;
+        }
       }
     }
 
@@ -110,7 +113,9 @@
         height: 26px;
         color: #04549f;
         stroke: #04549f;
-        transition: color 0.25s ease, stroke 0.25s ease;
+        transition:
+          color 0.25s ease,
+          stroke 0.25s ease;
       }
     }
 
@@ -131,19 +136,40 @@
   }
 
   @media (max-width: 1024px) {
-    .featured-majors-container { padding: 0 24px; }
+    .featured-majors-container {
+      padding: 0 24px;
+    }
   }
 
   @media (max-width: 768px) {
     padding: 40px 0 60px;
-    .featured-majors-container { padding: 0 20px; }
-    .section-header-actions { flex-direction: row; align-items: flex-start; }
+    .featured-majors-container {
+      padding: 0 20px;
+    }
+    .section-header-actions {
+      flex-direction: row;
+      align-items: flex-start;
+    }
   }
 
   @media (max-width: 480px) {
-    .featured-majors-container { padding: 0 16px; }
-    .section-header-actions { flex-direction: column; align-items: flex-start; }
-    .major-card { padding: 18px 12px 16px; }
-    .major-icon { width: 44px; height: 44px; svg { width: 22px; height: 22px; } }
+    .featured-majors-container {
+      padding: 0 16px;
+    }
+    .section-header-actions {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    .major-card {
+      padding: 18px 12px 16px;
+    }
+    .major-icon {
+      width: 44px;
+      height: 44px;
+      svg {
+        width: 22px;
+        height: 22px;
+      }
+    }
   }
 }

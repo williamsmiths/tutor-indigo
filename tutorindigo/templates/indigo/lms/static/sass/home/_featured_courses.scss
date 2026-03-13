@@ -70,7 +70,9 @@
     border-radius: 12px;
     overflow: hidden;
     box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
-    transition: box-shadow 0.25s ease, transform 0.25s ease;
+    transition:
+      box-shadow 0.25s ease,
+      transform 0.25s ease;
     display: flex;
     flex-direction: column;
 
@@ -96,7 +98,9 @@
         transition: transform 0.35s ease;
       }
 
-      &:hover img { transform: scale(1.05); }
+      &:hover img {
+        transform: scale(1.05);
+      }
 
       .course-badges {
         position: absolute;
@@ -113,7 +117,7 @@
         font-weight: 600;
 
         &.badge-weeks {
-          background: rgba(255,255,255,0.9);
+          background: rgba(255, 255, 255, 0.9);
           color: #1f2937;
         }
 
@@ -163,7 +167,9 @@
       a {
         color: inherit;
         text-decoration: none;
-        &:hover { color: #04549f; }
+        &:hover {
+          color: #04549f;
+        }
       }
     }
 
@@ -204,23 +210,36 @@
         white-space: nowrap;
         transition: background 0.2s ease;
 
-        &:hover { background: #0e77da; }
+        &:hover {
+          background: #0e77da;
+        }
       }
     }
   }
 
   @media (max-width: 1024px) {
-    .featured-courses-container { padding: 0 24px; }
+    .featured-courses-container {
+      padding: 0 24px;
+    }
   }
 
   @media (max-width: 768px) {
     padding: 40px 0 60px;
-    .featured-courses-container { padding: 0 20px; }
-    .section-header-actions { flex-direction: row; align-items: flex-start; }
+    .featured-courses-container {
+      padding: 0 20px;
+    }
+    .section-header-actions {
+      flex-direction: row;
+      align-items: flex-start;
+    }
   }
 
   @media (max-width: 480px) {
-    .featured-courses-container { padding: 0 16px; }
-    .section-header-actions { flex-direction: column; }
+    .featured-courses-container {
+      padding: 0 16px;
+    }
+    .section-header-actions {
+      flex-direction: column;
+    }
   }
 }

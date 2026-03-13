@@ -47,7 +47,8 @@
     overflow: hidden;
     cursor: pointer;
 
-    &--lg { }  // center card — wider via column definition
+    &--lg {
+    } // center card — wider via column definition
 
     .research-img {
       position: relative;
@@ -65,7 +66,7 @@
       .research-card-overlay {
         position: absolute;
         inset: 0;
-        background: linear-gradient(180deg, transparent 40%, rgba(4,84,159,0.75) 100%);
+        background: linear-gradient(180deg, transparent 40%, rgba(4, 84, 159, 0.75) 100%);
         display: flex;
         align-items: flex-end;
         padding: 20px 18px;
@@ -82,7 +83,10 @@
       }
 
       &:hover {
-        img { transform: scale(1.05); filter: brightness(0.65); }
+        img {
+          transform: scale(1.05);
+          filter: brightness(0.65);
+        }
       }
     }
   }
@@ -146,18 +150,32 @@
   }
 
   @media (max-width: 1024px) {
-    .research-container { padding: 0 24px; }
+    .research-container {
+      padding: 0 24px;
+    }
   }
 
   @media (max-width: 768px) {
     padding: 50px 0;
-    .research-container { padding: 0 20px; }
-    .research-cards { .research-img { height: 200px; } }
+    .research-container {
+      padding: 0 20px;
+    }
+    .research-cards {
+      .research-img {
+        height: 200px;
+      }
+    }
   }
 
   @media (max-width: 480px) {
-    .research-container { padding: 0 16px; }
-    .research-stats { padding: 24px 16px; }
-    .stat-item .stat-number { font-size: 1.9rem; }
+    .research-container {
+      padding: 0 16px;
+    }
+    .research-stats {
+      padding: 24px 16px;
+    }
+    .stat-item .stat-number {
+      font-size: 1.9rem;
+    }
   }
 }
