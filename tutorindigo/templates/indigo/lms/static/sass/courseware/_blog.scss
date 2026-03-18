@@ -1,6 +1,6 @@
 // Blog Page Styles - Universe Learning Platform
 .blog-hero {
-  background: linear-gradient(200deg, #fff5d9 0%, #feb6b6 100%);
+  background: linear-gradient(200deg, #fff5d9 0%, #79beff 100%);
   padding: 80px 0 100px;
 
   @include media-breakpoint-up(md) {
@@ -27,7 +27,7 @@
     margin-bottom: 20px;
 
     .badge-text {
-      background: #d32f2f;
+      background: #04549F;
       color: white;
       padding: 8px 16px;
       border-radius: 20px;
@@ -51,7 +51,7 @@
     }
 
     .highlight {
-      color: #d32f2f;
+      color: #04549F;
     }
   }
 
@@ -103,7 +103,7 @@
   }
 
   .highlight {
-    color: #d32f2f;
+    color: #04549F;
   }
 }
 

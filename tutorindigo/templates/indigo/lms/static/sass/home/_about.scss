@@ -207,3 +207,342 @@
     }
   }
 }
+
+// ─────────────────────────────────────────────────────────────────────────────
+// Static About Page (/about) - Cong Thuong Elearning
+// ─────────────────────────────────────────────────────────────────────────────
+$blue-primary: #04549F;
+$blue-dark: #002D6E;
+$blue-light: #EEF4FB;
+
+// Hero
+.about-hero {
+  background: linear-gradient(160deg, $blue-light 0%, #c8dcf5 100%);
+  padding: 80px 0 100px;
+
+  @include media-breakpoint-up(md) {
+    padding: 110px 0 130px;
+  }
+
+  .about-hero-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 48px;
+    align-items: center;
+
+    @include media-breakpoint-up(lg) {
+      grid-template-columns: 1fr 1fr;
+      padding: 0 40px;
+    }
+  }
+
+  .about-hero-badge {
+    display: inline-block;
+    margin-bottom: 16px;
+
+    .badge-text {
+      background: $blue-primary;
+      color: white;
+      padding: 7px 16px;
+      border-radius: 20px;
+      font-size: 13px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+  }
+
+  .about-hero-title {
+    font-size: clamp(2rem, 4vw, 3rem);
+    font-weight: 800;
+    color: #1e293b;
+    margin: 0 0 20px;
+    line-height: 1.2;
+
+    .highlight {
+      color: $blue-primary;
+    }
+  }
+
+  .about-hero-subtitle {
+    font-size: 1.05rem;
+    color: #475569;
+    line-height: 1.6;
+    margin: 0;
+  }
+
+  .about-hero-visual {
+    display: flex;
+    justify-content: center;
+
+    @include media-breakpoint-up(lg) {
+      justify-content: flex-end;
+    }
+  }
+
+  .about-hero-image {
+    img {
+      width: 100%;
+      max-width: 420px;
+      height: auto;
+      object-fit: contain;
+    }
+  }
+}
+
+// Shared container for about page static sections
+.about-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+
+  @include media-breakpoint-up(lg) {
+    padding: 0 40px;
+  }
+}
+
+// Section title shared
+.about-mission,
+.about-features,
+.about-vision {
+  .section-title {
+    font-size: clamp(1.6rem, 3vw, 2.2rem);
+    font-weight: 700;
+    color: #1e293b;
+    margin-bottom: 32px;
+
+    .highlight {
+      color: $blue-primary;
+    }
+
+    &.text-center {
+      text-align: center;
+    }
+  }
+}
+
+// Mission
+.about-mission {
+  padding: 80px 0;
+  background: #fff;
+
+  .mission-grid {
+    display: grid;
+    gap: 60px;
+    align-items: start;
+
+    @include media-breakpoint-up(lg) {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  .mission-text {
+    p {
+      font-size: 1rem;
+      line-height: 1.75;
+      color: #475569;
+      margin-bottom: 16px;
+
+      &:last-child { margin-bottom: 0; }
+    }
+  }
+
+  .mission-stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+
+    @include media-breakpoint-down(sm) {
+      grid-template-columns: 1fr;
+      gap: 16px;
+    }
+  }
+
+  .stat-card {
+    background: $blue-light;
+    border-radius: 12px;
+    padding: 28px 16px;
+    text-align: center;
+    border-top: 4px solid $blue-primary;
+
+    .stat-number {
+      font-size: 2rem;
+      font-weight: 800;
+      color: $blue-primary;
+      line-height: 1;
+      margin-bottom: 8px;
+    }
+
+    .stat-label {
+      font-size: 0.9rem;
+      color: #64748b;
+      font-weight: 500;
+    }
+  }
+}
+
+// Features
+.about-features {
+  padding: 80px 0;
+  background: #f8fafc;
+
+  .features-grid {
+    display: grid;
+    gap: 28px;
+    grid-template-columns: 1fr;
+
+    @include media-breakpoint-up(md) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  .feature-card {
+    background: white;
+    border-radius: 14px;
+    padding: 36px 28px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+    transition: transform 0.22s ease, box-shadow 0.22s ease;
+
+    &:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 28px rgba(4, 84, 159, 0.12);
+    }
+
+    .feature-icon {
+      width: 64px;
+      height: 64px;
+      background: $blue-light;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+
+    .feature-title {
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: #1e293b;
+      margin-bottom: 12px;
+    }
+
+    .feature-description {
+      font-size: 0.92rem;
+      line-height: 1.65;
+      color: #64748b;
+      margin: 0;
+    }
+  }
+}
+
+// Vision
+.about-vision {
+  padding: 80px 0;
+  background: #fff;
+
+  .vision-content {
+    display: grid;
+    gap: 60px;
+    align-items: center;
+
+    @include media-breakpoint-up(lg) {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  .vision-text {
+    p {
+      font-size: 1rem;
+      line-height: 1.75;
+      color: #475569;
+      margin-bottom: 16px;
+
+      &:last-child { margin-bottom: 0; }
+    }
+  }
+
+  .vision-image {
+    display: flex;
+    justify-content: center;
+
+    img {
+      width: 100%;
+      max-width: 420px;
+      height: auto;
+      border-radius: 12px;
+      object-fit: cover;
+    }
+  }
+}
+
+// CTA
+.about-cta {
+  padding: 80px 0;
+  background: linear-gradient(135deg, $blue-primary 0%, $blue-dark 100%);
+
+  .cta-content {
+    text-align: center;
+    max-width: 680px;
+    margin: 0 auto;
+  }
+
+  .cta-title {
+    font-size: clamp(1.6rem, 3vw, 2.2rem);
+    font-weight: 800;
+    color: white;
+    margin-bottom: 16px;
+    line-height: 1.25;
+  }
+
+  .cta-subtitle {
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.82);
+    margin-bottom: 36px;
+    line-height: 1.6;
+  }
+
+  .cta-buttons {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    .btn {
+      padding: 13px 32px;
+      border-radius: 8px;
+      font-size: 0.95rem;
+      font-weight: 700;
+      text-decoration: none;
+      transition: all 0.22s ease;
+      display: inline-flex;
+      align-items: center;
+      border: 2px solid transparent;
+
+      &.btn-primary {
+        background: #FFD600;
+        color: #1e293b;
+
+        &:hover {
+          background: #FFC300;
+          transform: translateY(-2px);
+          box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+        }
+      }
+
+      &.btn-secondary {
+        background: transparent;
+        color: white;
+        border-color: rgba(255, 255, 255, 0.6);
+
+        &:hover {
+          background: rgba(255, 255, 255, 0.12);
+          border-color: white;
+          transform: translateY(-2px);
+        }
+      }
+    }
+  }
+}
