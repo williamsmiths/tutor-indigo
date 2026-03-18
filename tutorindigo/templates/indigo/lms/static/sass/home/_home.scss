@@ -40,6 +40,7 @@ section.home {
   margin: 0 auto;
   padding: 0 15px;
 }
+
 @media (min-width: 1180px) {
   .min-w-xl-300 {
     display: block !important;
@@ -47,20 +48,24 @@ section.home {
   }
 }
 
-.home > header .title {
+.home>header .title {
   background: none !important;
 }
-.home > header .outer-wrapper {
+
+.home>header .outer-wrapper {
   max-width: 100%;
 }
+
 .global-header .nav-links .secondary {
   .btn-holder {
     letter-spacing: -0.32em;
     margin: 0 -7px;
+
     .nav-item {
       letter-spacing: normal;
       margin: 0 7px;
       padding: 12px 0;
+
       .btn {
         line-height: 20px;
         padding: 9px 17px;
@@ -72,10 +77,12 @@ section.home {
     }
   }
 }
+
 #main .home.style-logout {
   header {
     background: none;
     overflow: visible;
+
     .outer-wrapper {
       .title {
         width: 100%;
@@ -83,16 +90,20 @@ section.home {
         margin: 0;
         padding: 30px 0 0;
         min-height: 20px;
+
         @include media-breakpoint-up(sm) {
           padding: 50px 0 0;
         }
+
         .heading-group {
           margin: 0 0 25px;
           text-align: left;
           padding: 0;
+
           @include media-breakpoint-up(sm) {
             margin: 0 0 45px;
           }
+
           h1 {
             color: #111827;
             font-size: 20px;
@@ -100,12 +111,14 @@ section.home {
             line-height: 30px;
             margin: 0 0 8px;
             text-align: left;
+
             @include media-breakpoint-up(md) {
               font-size: 24px;
               font-weight: 700;
               margin: 0 0 12px;
             }
           }
+
           p {
             font-size: 16px;
             line-height: 20px;
@@ -114,8 +127,10 @@ section.home {
             margin: 0;
           }
         }
+
         .course-search {
           padding: 0;
+
           .search-field-wrapper {
             display: flex;
 
@@ -135,15 +150,18 @@ section.home {
                 background: $primary;
                 font-family: $font-family-title;
                 border: none;
+
                 @include media-breakpoint-up(sm) {
                   min-width: 100px;
                 }
+
                 &:hover {
                   background: $primary;
                   opacity: 0.8;
                 }
               }
             }
+
             .input-holder {
               flex-grow: 1;
               border-radius: 6px;
@@ -151,12 +169,14 @@ section.home {
               padding: 0 0 0 33px;
               position: relative;
               display: block;
+
               svg {
                 position: absolute;
                 left: 12px;
                 font-size: 20px;
                 top: 10px;
               }
+
               input {
                 border: none;
                 box-shadow: none;
@@ -181,13 +201,16 @@ section.home {
     }
   }
 }
+
 body.indigo-dark-theme {
   h1 {
     color: $text-color-d;
   }
+
   p a:not(.btn),
   a:not(.btn) {
     color: $primary-d;
+
     &:hover,
     &:focus,
     &:active,
@@ -195,6 +218,7 @@ body.indigo-dark-theme {
       color: $primary-d;
     }
   }
+
   .global-header .nav-links .secondary {
     .btn-holder {
       .nav-item {
@@ -205,6 +229,7 @@ body.indigo-dark-theme {
             border-color: $primary-d;
             height: 48px;
           }
+
           &.register-btn {
             color: $text-color-d;
             border-color: $text-color-d;
@@ -215,19 +240,23 @@ body.indigo-dark-theme {
       }
     }
   }
+
   #main .home.style-logout {
     header {
       background: none;
+
       .outer-wrapper {
         .title {
           .heading-group {
             h1 {
               color: $text-color-d;
             }
+
             p {
               color: $text-color-primary;
             }
           }
+
           .course-search {
             .search-field-wrapper {
               .button-holder {
@@ -235,19 +264,23 @@ body.indigo-dark-theme {
                   color: $btn-color-d;
                   background: $primary-d;
                   border: none;
+
                   &:hover {
                     color: $btn-color-d;
                     background: $primary-d;
                   }
                 }
               }
+
               .input-holder {
                 background: $primary-light-d;
+
                 svg {
                   path {
                     fill: $text-color-primary;
                   }
                 }
+
                 input {
                   color: $text-color-d;
                 }
@@ -288,9 +321,11 @@ body.indigo-dark-theme {
       text-align: center;
       margin: 0 0 32px;
       line-height: 1.4;
+
       .highlight {
-        color: #b71c1c;
+        color: #04549F;
       }
+
       @media (max-width: 768px) {
         font-size: 22px;
         margin: 0 0 24px;
@@ -342,8 +377,8 @@ body.indigo-dark-theme {
         }
 
         &:hover {
-          background: #b71c1c;
-          border-color: #b71c1c;
+          background: #04549F;
+          border-color: #04549F;
           color: white;
           transform: translateY(-1px);
           //   box-shadow: 0 4px 12px rgba(183, 28, 28, 0.3);
@@ -352,14 +387,14 @@ body.indigo-dark-theme {
         &:active {
           transform: translateY(0);
           box-shadow: none !important;
-          background: #b71c1c;
-          border-color: #b71c1c;
+          background: #04549F;
+          border-color: #04549F;
           color: white;
         }
 
         &.active {
-          background: #b71c1c;
-          border-color: #b71c1c;
+          background: #04549F;
+          border-color: #04549F;
           color: white;
           box-shadow: none !important;
           //   box-shadow: 0 4px 12px rgba(183, 28, 28, 0.35);

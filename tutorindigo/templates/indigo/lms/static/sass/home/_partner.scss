@@ -19,7 +19,7 @@
       margin-bottom: 15px;
 
       .highlight {
-        color: #b71c1c;
+        color: #04549F;
       }
     }
 
@@ -36,6 +36,7 @@
 
   .partner-logos {
     width: 100vw;
+
     .logo-row {
       display: flex;
       align-items: center;
@@ -114,6 +115,7 @@
   0% {
     transform: translateX(-100vw);
   }
+
   100% {
     transform: translateX(100vw);
   }
@@ -123,6 +125,7 @@
   0% {
     transform: translateX(100vw);
   }
+
   100% {
     transform: translateX(-100vw);
   }
@@ -241,6 +244,7 @@
       .logo-row {
         width: 100vw;
         padding: 20px 0;
+
         .logo-track {
           .logo-item {
             margin-right: 20px;

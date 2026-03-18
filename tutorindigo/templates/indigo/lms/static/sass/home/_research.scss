@@ -10,7 +10,7 @@
   }
 
   .section-hd {
-    text-align: center;
+    text-align: start;
     margin-bottom: 40px;
 
     .section-title {
@@ -47,8 +47,9 @@
     overflow: hidden;
     cursor: pointer;
 
-    &--lg {
-    } // center card — wider via column definition
+    &--lg {}
+
+    // center card — wider via column definition
 
     .research-img {
       position: relative;
@@ -157,9 +158,11 @@
 
   @media (max-width: 768px) {
     padding: 50px 0;
+
     .research-container {
       padding: 0 20px;
     }
+
     .research-cards {
       .research-img {
         height: 200px;
@@ -171,9 +174,11 @@
     .research-container {
       padding: 0 16px;
     }
+
     .research-stats {
       padding: 24px 16px;
     }
+
     .stat-item .stat-number {
       font-size: 1.9rem;
     }

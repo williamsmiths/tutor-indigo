@@ -45,7 +45,7 @@
       font-weight: 700;
       margin-bottom: 16px;
       line-height: 1.2;
-      color: #b71c1c;
+      color: #04549F;
 
       @media (max-width: 768px) {
         font-size: 2rem;
@@ -85,12 +85,12 @@
         text-decoration: none;
         display: inline-block;
         background: white;
-        color: #b71c1c;
+        color: #04549F;
         border: 2px solid white;
 
         &:hover {
           // background: transparent;
-          background: #b71c1c;
+          background: #04549F;
           color: white;
           border-color: white;
           transform: translateY(-2px);
@@ -151,10 +151,12 @@
 }
 
 @keyframes float {
+
   0%,
   100% {
     transform: translateY(0px);
   }
+
   50% {
     transform: translateY(-20px);
   }

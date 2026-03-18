@@ -1,0 +1,185 @@
+<!-- Research Section -->
+<div id="research-section">
+  <div class="research-container">
+    <div class="section-hd">
+      <!-- <span class="section-tag">KHOA HỌC CÔNG NGHỆ</span> -->
+      <h2 class="section-title-blue">Nghiên Cứu & Khoa Học</h2>
+      <p class="section-sub">Khám phá những hoạt động nghiên cứu khoa học tiêu biểu</p>
+    </div>
+
+    <!-- Research image cards -->
+    <div class="research-cards">
+      <div class="research-card">
+        <div class="research-img">
+          <img src="/static/indigo/images/hero/about_2.png" alt="Hoạt Động Khoa Học" />
+          <div class="research-card-overlay">
+            <h3>Hoạt Động Khoa Học</h3>
+          </div>
+        </div>
+      </div>
+
+      <div class="research-card research-card--lg">
+        <div class="research-img">
+          <img src="/static/indigo/images/hero/students.png" alt="Công Bố Quốc Tế" />
+          <div class="research-card-overlay">
+            <h3>Công Bố Quốc Tế</h3>
+          </div>
+        </div>
+      </div>
+
+      <div class="research-card">
+        <div class="research-img">
+          <img src="/static/indigo/images/hero/about_1.png" alt="Đề Tài NCKH" />
+          <div class="research-card-overlay">
+            <h3>Đề Tài Nghiên Cứu (NCKH)</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Stats bar -->
+    <div class="research-stats">
+      <div class="stat-item">
+        <span class="stat-number">25K+</span>
+        <span class="stat-label">Sinh Viên</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-item">
+        <span class="stat-number">1250</span>
+        <span class="stat-label">Bài Công Bố Quốc Tế</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-item">
+        <span class="stat-number">1150</span>
+        <span class="stat-label">Đề Tài NCKH</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-item">
+        <span class="stat-number">Top 30</span>
+        <span class="stat-label">Công Bố Quốc Tế Tại VN</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  #research-section {
+    padding: 80px 0;
+    background: #ffffff;
+  }
+
+  .research-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 32px;
+  }
+
+  .research-cards {
+    display: grid;
+    grid-template-columns: 1fr 1.6fr 1fr;
+    gap: 18px;
+    margin-bottom: 0;
+  }
+
+  .research-card {
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 77, 160, 0.1);
+  }
+
+  .research-img {
+    position: relative;
+    height: 260px;
+  }
+
+  .research-card--lg .research-img {
+    height: 340px;
+  }
+
+  .research-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+  }
+
+  .research-card:hover .research-img img {
+    transform: scale(1.05);
+  }
+
+  .research-card-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(0, 30, 90, 0.75) 0%, rgba(0, 77, 160, 0.15) 60%, transparent 100%);
+    display: flex;
+    align-items: flex-end;
+    padding: 18px;
+  }
+
+  .research-card-overlay h3 {
+    color: #ffffff;
+    font-size: 0.95rem;
+    font-weight: 700;
+    margin: 0;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+  }
+
+  /* Stats bar */
+  .research-stats {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: #004DA0;
+    border-radius: 0 0 20px 20px;
+    padding: 32px 40px;
+    margin-top: 0;
+  }
+
+  .stat-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+  }
+
+  .stat-number {
+    font-size: clamp(1.6rem, 3vw, 2.2rem);
+    font-weight: 800;
+    color: #FFD600;
+    line-height: 1;
+  }
+
+  .stat-label {
+    font-size: 0.82rem;
+    color: rgba(255, 255, 255, 0.8);
+    font-weight: 500;
+    text-align: center;
+    max-width: 120px;
+  }
+
+  .stat-divider {
+    width: 1px;
+    height: 48px;
+    background: rgba(255, 255, 255, 0.2);
+  }
+
+  @media (max-width: 768px) {
+    .research-cards {
+      grid-template-columns: 1fr;
+    }
+
+    .research-card--lg .research-img {
+      height: 260px;
+    }
+
+    .research-stats {
+      flex-wrap: wrap;
+      gap: 24px;
+      border-radius: 0;
+    }
+
+    .stat-divider {
+      display: none;
+    }
+  }
+</style>

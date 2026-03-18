@@ -8,63 +8,56 @@ from django.urls import reverse
 from openedx.core.djangolib.markup import HTML, Text
 %>
 
+  <main id="main" aria-label="Content" tabindex="-1">
+    <!-- 1. Hero Section -->
+    <%include file="components/hero_section.html" />
 
-<main id="main" aria-label="Content" tabindex="-1">
-  <!-- 1. Hero Section -->
-  <%include file="hero_section.html" />
+    <!-- 2. About / Introduction Section -->
+    <%include file="components/about_section.html" />
 
-  <!-- 2. About / Introduction Section -->
-  <%include file="about_section.html" />
+    <!-- 3. Training Areas (campus photo grid) -->
+    <%include file="components/training_areas_section.html" />
 
-  <!-- 3. Training Areas (campus photo grid) -->
-  <%include file="training_areas_section.html" />
+    <!-- 4. Featured Majors (icon grid) -->
+    <%include file="components/featured_majors_section.html" />
+    
+    <!-- 5. Featured Courses (curated cards) -->
+    <%include file="components/featured_courses_section.html" />
 
-  <!-- 4. Featured Majors (icon grid) -->
-  <%include file="featured_majors_section.html" />
+    <!-- 6. Research / Science Section -->
+    <%include file="components/research_section.html" />
 
-  <!-- 5. Featured Courses (curated cards) -->
-  <%include file="featured_courses_section.html" />
+    <!-- 7. Skills Development Section -->
+    <%include file="components/skills_development_section.html" />
 
-  <!-- 6. Research / Science Section -->
-  <%include file="research_section.html" />
+    <!-- 9. Student Testimonials Section -->
+    <%include file="components/testimonials_section.html" />
 
-  <!-- 7. Skills Development Section -->
-  <%include file="skills_development_section.html" />
+    <!-- 11. CTA Banner -->
+    <%include file="components/cta_banner_section.html" />
 
-  <!-- 8. Partner Logos (scrolling) -->
-  <%include file="partner_section.html" />
-
-  <!-- 9. Student Testimonials Section -->
-  <%include file="testimonials_section.html" />
-
-  <!-- 10. Upcoming Events Section -->
-  <%include file="events_section.html" />
-
-  <!-- 11. CTA Banner -->
-  <%include file="cta_banner_section.html" />
-
-  <!-- Dynamic edX course catalog (used for course discovery / SEO) -->
-  <section class="home style-logout" style="display:none;">
-    <header>
-      <div class="outer-wrapper">
-        <div class="title" style="padding-top: 0;">
-          <div class="heading-group">
-            % if homepage_overlay_html:
+    <!-- Dynamic edX course catalog (used for course discovery / SEO) -->
+    <section class="home style-logout" style="display:none;">
+      <header>
+        <div class="outer-wrapper">
+          <div class="title" style="padding-top: 0;">
+            <div class="heading-group">
+              % if homepage_overlay_html:
               ${homepage_overlay_html | n, decode.utf8}
-            % else:
+              % else:
               <%include file="index_overlay.html" />
-            % endif
+              % endif
+            </div>
           </div>
+          <%include file="index_promo_video.html" />
         </div>
-        <%include file="index_promo_video.html" />
-      </div>
-    </header>
-    <%include file="${courses_list}" />
+      </header>
+      <%include file="${courses_list}" />
 
-    <!-- Platform Info Section (kept for internal use) -->
-    <%include file="platform_info_section.html" />
-  </section>
-</main>
+      <!-- Platform Info Section (kept for internal use) -->
+      <%include file="platform_info_section.html" />
+    </section>
+  </main>
 
 % if show_homepage_promo_video:
   <section id="video-modal" class="modal home-page-video-modal video-modal">

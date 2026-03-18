@@ -1,0 +1,161 @@
+<!-- Training Areas Section -->
+<div id="training-areas-section">
+  <div class="training-areas-container">
+    <div class="section-hd">
+      <!-- <span class="section-tag">BẬC ĐÀO TẠO</span> -->
+      <h2 class="section-title-blue">Các Bậc Đào Tạo</h2>
+      <p class="section-sub">Khám phá những bậc đào tạo đa dạng tại Trường Đại học Công Thương TP.HCM</p>
+    </div>
+
+    <div class="training-areas-grid">
+      <div class="area-card">
+        <img src="/static/indigo/images/hero/about_1.png" alt="Sau Đại Học" />
+        <div class="area-overlay">
+          <h3 class="area-name">SAU ĐẠI HỌC</h3>
+        </div>
+      </div>
+
+      <div class="area-card">
+        <img src="/static/indigo/images/hero/students.png" alt="Đại Học" />
+        <div class="area-overlay">
+          <h3 class="area-name">ĐẠI HỌC</h3>
+        </div>
+      </div>
+
+      <div class="area-card">
+        <img src="/static/indigo/images/hero/about_2.png" alt="Cao Đẳng" />
+        <div class="area-overlay">
+          <h3 class="area-name">CAO ĐẲNG</h3>
+        </div>
+      </div>
+
+      <div class="area-card">
+        <img src="/static/indigo/images/hero/blog.png" alt="Liên Kết Quốc Tế" />
+        <div class="area-overlay">
+          <h3 class="area-name">LIÊN KẾT QUỐC TẾ</h3>
+        </div>
+      </div>
+
+      <div class="area-card">
+        <img src="/static/indigo/images/hero/about_1.png" alt="Ngắn Hạn" />
+        <div class="area-overlay">
+          <h3 class="area-name">NGẮN HẠN</h3>
+        </div>
+      </div>
+
+      <div class="area-card">
+        <img src="/static/indigo/images/hero/online-school.png" alt="THPT" />
+        <div class="area-overlay">
+          <h3 class="area-name">THPT</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  #training-areas-section {
+    padding: 80px 0;
+    background: #F8FAFF;
+  }
+
+  .training-areas-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 32px;
+  }
+
+  .section-hd {
+    text-align: center;
+    margin-bottom: 48px;
+  }
+
+  .section-tag {
+    display: inline-block;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #004DA0;
+    background: #EEF4FB;
+    padding: 5px 14px;
+    border-radius: 50px;
+    margin-bottom: 12px;
+    text-transform: uppercase;
+  }
+
+  .section-title-blue {
+    font-size: clamp(1.5rem, 3vw, 2rem);
+    font-weight: 800;
+    color: #1A1A2E;
+    margin: 0 0 10px;
+  }
+
+  .section-sub {
+    font-size: 1rem;
+    color: #6B7280;
+    margin: 0;
+  }
+
+  .training-areas-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+
+  .area-card {
+    position: relative;
+    border-radius: 16px;
+    overflow: hidden;
+    /* aspect-ratio: 4/3; */
+    cursor: pointer;
+    box-shadow: 0 4px 20px rgba(0, 77, 160, 0.12);
+  }
+
+  .area-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.45s ease;
+  }
+
+  .area-card:hover img {
+    transform: scale(1.07);
+  }
+
+  .area-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(0, 30, 90, 0.75) 0%, rgba(0, 77, 160, 0.2) 60%, transparent 100%);
+    display: flex;
+    align-items: flex-end;
+    padding: 20px;
+    transition: background 0.3s ease;
+  }
+
+  .area-card:hover .area-overlay {
+    background: linear-gradient(to top, rgba(0, 30, 90, 0.85) 0%, rgba(0, 77, 160, 0.4) 60%, rgba(0, 77, 160, 0.1) 100%);
+  }
+
+  .area-name {
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+    margin: 0;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+  }
+
+  @media (max-width: 768px) {
+    .training-areas-grid {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 14px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .training-areas-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

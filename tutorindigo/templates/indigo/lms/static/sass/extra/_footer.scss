@@ -79,7 +79,7 @@ footer.tutor-container {
             transform: translateX(-50%);
             width: 40px;
             height: 3px;
-            background: linear-gradient(90deg, #d32f2f, #b71c1c);
+            background: linear-gradient(90deg, #04549F, #04549F);
             border-radius: 2px;
 
             @include media-breakpoint-up(lg) {
@@ -150,7 +150,7 @@ footer.tutor-container {
             transform: translateX(-50%);
             width: 40px;
             height: 3px;
-            background: linear-gradient(90deg, #d32f2f, #b71c1c);
+            background: linear-gradient(90deg, #04549F, #04549F);
             border-radius: 2px;
 
             @include media-breakpoint-up(lg) {
@@ -184,7 +184,7 @@ footer.tutor-container {
             }
 
             &:hover {
-              color: #d32f2f;
+              color: #04549F;
             }
 
             a {
@@ -193,7 +193,7 @@ footer.tutor-container {
               transition: color 0.3s ease;
 
               &:hover {
-                color: #d32f2f;
+                color: #04549F;
               }
             }
           }
